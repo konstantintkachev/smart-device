@@ -1,0 +1,161 @@
+.about {
+  margin-top: 80px;
+
+  @media (max-width: 1023px) {
+    margin-top: 30px;
+  }
+}
+
+.about__container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 191px;
+  padding-right: 35px;
+  max-width: 1200px;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    padding-left: 212px;
+    padding-right: 13px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 12px 15px 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    left: -16px;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/year@2x.png");
+    }
+
+    @media (max-width: 1023px) {
+      padding-left: 212px;
+      padding-right: 13px;
+      left: -3px;
+      width: 251px;
+      height: 362px;
+      background-image: url("../img/year_tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/year_tablet@2x.png");
+      }
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+      padding: 33px 15px 0;
+    }
+  }
+}
+
+.about__container h3 {
+  color: $dark-grey;
+  font-weight: normal;
+  line-height: 51px;
+  font-size: 36px;
+  margin-bottom: 20px;
+
+  @media (max-width: 1023px) {
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: -3px;
+    padding-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about__container p {
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: PT Mono;
+  margin-top: 18px;
+
+  @media (max-width: 767px) {
+    padding-left: 4px;
+  }
+}
+
+.about__container p:nth-child(3) {
+  @media (max-width: 767px) {
+    margin-top: 39px;
+    margin-bottom: 26px;
+  }
+}
+
+.about__hidden {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.about__desktop-show {
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.about__button {
+  min-width: 180px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+  background-color: transparent;
+  padding: 14px 13px 8px 12px;
+  border-radius: 5%;
+  border: solid 1px $blue;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 24px 10px auto 0;
+  height: 45px;
+
+  @media (max-width: 1023px) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 3px;
+    margin-right: 7px;
+    padding-left: 17px;
+    padding-top: 8px;
+  }
+
+  // @media (max-width: 1023px) {
+  //   display: none;
+  // }
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 2px solid $blue;
+  }
+}
