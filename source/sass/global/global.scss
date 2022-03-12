@@ -16,13 +16,6 @@ html {
   overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  outline: 2px #000000;
-}
-
 body {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
